@@ -14953,6 +14953,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
+<package name="TACTILE_SWITCH_SMD_4X3MM">
+<description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.0 x 3.5 mm&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/1101.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="1" x="-2.2" y="0" dx="1" dy="2" layer="1" rot="R180"/>
+<smd name="2" x="2.2" y="0" dx="1" dy="2" layer="1" rot="R180"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.9" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH-MOMENTARY-2">
@@ -15142,6 +15156,15 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-13065"/>
 </technology>
+</technologies>
+</device>
+<device name="" package="TACTILE_SWITCH_SMD_4X3MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -15869,6 +15892,154 @@ Used as a test point connection for pogo pins or other debugging tools.
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit" urn="urn:adsk.eagle:library:420">
+<packages>
+<package name="SOT23-W" library_version="1">
+<description>&lt;b&gt;SOT23&lt;/b&gt; - Wave soldering</description>
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.3984" x2="-1.5724" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.3984" width="0.1524" layer="21"/>
+<wire x1="0.2954" y1="-0.6604" x2="-0.3094" y2="-0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1.3" dx="2.8" dy="1.4" layer="1"/>
+<smd name="2" x="1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
+<smd name="1" x="-1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
+<text x="2.032" y="0.254" size="0.4064" layer="25">&gt;NAME</text>
+<text x="2.032" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT23" library_version="1">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="TO220V" library_version="1">
+<description>&lt;b&gt;TO 200 vertical&lt;/b&gt;</description>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.127" layer="21"/>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="-3.175" size="1.27" layer="51" ratio="10">2</text>
+<text x="1.905" y="-3.175" size="1.27" layer="51" ratio="10">3</text>
+<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
+<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
+<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
+<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
+<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
+<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
+<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MOSFET-N" library_version="1">
+<wire x1="0.762" y1="0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.175" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="0.762" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.905" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.762" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.572" y1="0.762" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.508" x2="3.048" y2="0.254" width="0.1524" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
+<text x="5.08" y="0.635" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-1.27" size="1.27" layer="96">&gt;VALUE</text>
+<text x="3.175" y="3.175" size="0.8128" layer="93">D</text>
+<text x="3.175" y="-3.81" size="0.8128" layer="93">S</text>
+<text x="-1.27" y="-1.905" size="0.8128" layer="93">G</text>
+<pin name="G" x="-2.54" y="-2.54" visible="pad" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="D" x="2.54" y="5.08" visible="pad" length="short" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="3.81" y="0.508"/>
+<vertex x="3.302" y="-0.254"/>
+<vertex x="4.318" y="-0.254"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.032" y="0.762"/>
+<vertex x="2.032" y="-0.762"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MOSFET-N" prefix="Q" uservalue="yes" library_version="1">
+<description>&lt;b&gt;N-Channel Mosfet&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;2N7002E - 60V 260mA SOT23 [Digikey: 2N7002ET1GOSTR-ND] - &lt;b&gt;REEL&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;BSH103 - 30V 850mA SOT23 [Digikey: 568-5013-1-ND]&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MOSFET-N" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="WAVE" package="SOT23-W">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="REFLOW" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="GDS_TO220V" package="TO220V">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15915,9 +16086,9 @@ Used as a test point connection for pogo pins or other debugging tools.
 <part name="5V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="VIN3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="VIN"/>
-<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
+<part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1K"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1M"/>
+<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100K"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10uF"/>
@@ -15932,7 +16103,7 @@ Used as a test point connection for pogo pins or other debugging tools.
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
-<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-5.2-REDUNDANT"/>
+<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="" value="MOMENTARY-SWITCH-SPST"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="BAT54C" device="" package3d_urn="urn:adsk.eagle:package:43389/2"/>
 <part name="U2" library="drv8835" deviceset="DRV8835DSSR" device=""/>
 <part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
@@ -15946,15 +16117,26 @@ Used as a test point connection for pogo pins or other debugging tools.
 <part name="5V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="5V"/>
 <part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
 <part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
-<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="1M"/>
+<part name="R7" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="100K"/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="0.1uF"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="Q2" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="MOSFET-N" device="REFLOW"/>
+<part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="27.94" y="193.04" size="2.54" layer="97">Power supply section</text>
+<text x="38.1" y="185.42" size="2.54" layer="97">Power supply</text>
+<text x="121.92" y="20.32" size="1.778" layer="97" rot="R90">Zener 5.1V</text>
+<text x="58.42" y="121.92" size="2.54" layer="97">Power input</text>
+<text x="25.4" y="76.2" size="2.54" layer="97">Raspberry Pi header</text>
+<text x="137.16" y="190.5" size="2.54" layer="97">Battery voltage divider</text>
+<text x="243.84" y="195.58" size="2.54" layer="97">Microcontroller</text>
+<text x="147.32" y="121.92" size="2.54" layer="97">Programming header</text>
+<text x="208.28" y="111.76" size="2.54" layer="97">Servo connector</text>
+<text x="218.44" y="58.42" size="2.54" layer="97">Motor driver</text>
+<text x="114.3" y="78.74" size="2.54" layer="97">Power on button</text>
 </plain>
 <instances>
 <instance part="U$1" gate="1" x="35.56" y="15.24"/>
@@ -15984,8 +16166,8 @@ Used as a test point connection for pogo pins or other debugging tools.
 <instance part="GND6" gate="1" x="55.88" y="86.36"/>
 <instance part="VIN1" gate="VCC" x="50.8" y="116.84"/>
 <instance part="GND7" gate="1" x="246.38" y="0"/>
-<instance part="R1" gate="G$1" x="109.22" y="142.24" rot="R180"/>
-<instance part="LED1" gate="G$1" x="116.84" y="152.4"/>
+<instance part="R1" gate="G$1" x="109.22" y="157.48"/>
+<instance part="LED1" gate="G$1" x="116.84" y="147.32"/>
 <instance part="J1" gate="A" x="160.02" y="104.14"/>
 <instance part="5V3" gate="VCC" x="190.5" y="33.02"/>
 <instance part="VIN2" gate="VCC" x="205.74" y="50.8"/>
@@ -16006,12 +16188,14 @@ Used as a test point connection for pogo pins or other debugging tools.
 <instance part="R6" gate="G$1" x="152.4" y="157.48" rot="R270"/>
 <instance part="VIN5" gate="VCC" x="152.4" y="185.42"/>
 <instance part="GND13" gate="1" x="152.4" y="144.78"/>
-<instance part="LD1" gate="G$1" x="124.46" y="25.4" rot="R180"/>
+<instance part="LD1" gate="G$1" x="124.46" y="25.4" smashed="yes" rot="R180"/>
 <instance part="C10" gate="G$1" x="190.5" y="12.7" rot="R180"/>
 <instance part="GND14" gate="1" x="190.5" y="5.08"/>
 <instance part="C12" gate="G$1" x="287.02" y="38.1" rot="R270"/>
 <instance part="C13" gate="G$1" x="287.02" y="30.48" rot="R270"/>
-<instance part="S2" gate="G$1" x="106.68" y="43.18" rot="R270"/>
+<instance part="S2" gate="G$1" x="106.68" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.204" y="43.18" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+</instance>
 <instance part="D1" gate="G$1" x="149.86" y="53.34"/>
 <instance part="U2" gate="A" x="208.28" y="40.64"/>
 <instance part="JP4" gate="A" x="226.06" y="88.9"/>
@@ -16032,6 +16216,8 @@ Used as a test point connection for pogo pins or other debugging tools.
 <instance part="C14" gate="G$1" x="119.38" y="63.5" rot="R180"/>
 <instance part="GND15" gate="1" x="119.38" y="55.88"/>
 <instance part="GND16" gate="1" x="127" y="55.88"/>
+<instance part="Q2" gate="G$1" x="154.94" y="27.94"/>
+<instance part="GND17" gate="1" x="157.48" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -16123,8 +16309,8 @@ Used as a test point connection for pogo pins or other debugging tools.
 <wire x1="93.98" y1="147.32" x2="93.98" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="147.32" x2="101.6" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="142.24" x2="104.14" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
 <junction x="101.6" y="142.24"/>
 </segment>
 <segment>
@@ -16235,6 +16421,11 @@ Used as a test point connection for pogo pins or other debugging tools.
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="157.48" y1="22.86" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -16266,10 +16457,9 @@ Used as a test point connection for pogo pins or other debugging tools.
 <wire x1="93.98" y1="154.94" x2="93.98" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="154.94" x2="101.6" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="157.48" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="157.48" x2="104.14" y2="157.48" width="0.1524" layer="91"/>
 <junction x="101.6" y="157.48"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="116.84" y1="157.48" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCC@1"/>
@@ -16574,14 +16764,6 @@ Used as a test point connection for pogo pins or other debugging tools.
 <pinref part="U2" gate="A" pin="BIN1/BPHASE"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="142.24" x2="116.84" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="116.84" y1="142.24" x2="116.84" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="ENC1_B" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="PD7(AIN1)"/>
@@ -16713,23 +16895,15 @@ Used as a test point connection for pogo pins or other debugging tools.
 </net>
 <net name="BUTTON" class="0">
 <segment>
-<wire x1="124.46" y1="35.56" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="35.56" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
-<label x="144.78" y="35.56" size="1.778" layer="95"/>
-<pinref part="LD1" gate="G$1" pin="C"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A1"/>
-<wire x1="134.62" y1="35.56" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="PC1(ADC1)"/>
 <wire x1="276.86" y1="180.34" x2="281.94" y2="180.34" width="0.1524" layer="91"/>
 <label x="281.94" y="180.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="157.48" y1="33.02" x2="157.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
+<label x="165.1" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PS_ON" class="0">
@@ -16780,6 +16954,32 @@ Used as a test point connection for pogo pins or other debugging tools.
 <wire x1="289.56" y1="167.64" x2="294.64" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="172.72" x2="304.8" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="TP3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="BT" class="0">
+<segment>
+<wire x1="124.46" y1="35.56" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="35.56" x2="134.62" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="LD1" gate="G$1" pin="C"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="35.56" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A1"/>
+<wire x1="134.62" y1="35.56" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="35.56" x2="147.32" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="147.32" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="157.48" x2="116.84" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="116.84" y1="157.48" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
